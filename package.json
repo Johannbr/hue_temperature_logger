@@ -1,0 +1,21 @@
+{
+  "name": "huephilips",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "node ./lib/index.js",
+    "build": "flow-remove-types src/ -d lib/",
+    "prepublish": "npm run build",
+    "flow": "flow"
+  },
+  "dependencies": {
+    "huejay": "1.9.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "flow-remove-types": "^2.113.0"
+  }
+}
